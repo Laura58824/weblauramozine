@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paleta de Cores - Levaê</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/paleta.css">
+</head>
+<body>
+    <header class="rota-header">
+        <p class="eyebrow">Levaê · design</p>
+        <h1>Paleta de Cores - Levaê </h1>
+    </header>
+
+    <main>
+        <section class="parada">
+            <h2>Cor principal</h2>
+            <div class="cor-principal">
+                <div class="amostra-grande"></div>
+                <div class="info">
+                    <strong>Azul</strong>
+                    <span>#3B82F6</span>
+                </div>
+            </div>
+            <p>
+                O azul foi escolhido como cor principal do Levaê porque remete a
+                <strong>confiança, segurança e tecnologia</strong> — valores essenciais
+                para quem confia seu trajeto a um motorista que muitas vezes acabou
+                de conhecer. Além disso, o azul é associado ao céu aberto e ao
+                deslocamento, reforçando a ideia de rotas, estradas e conexão entre
+                cidades, que é a proposta central da plataforma.
+            </p>
+        </section>
+
+        <section class="parada">
+            <h2>Tipo de paleta</h2>
+            <p>
+                Para as cores do Levaê, foi escolhida uma paleta monocromática, 
+                utilizando principalmente diferentes tons de azul junto com cores neutras, 
+                como branco e cinza. Dessa forma, é possível utilizar tons mais escuros 
+                para textos e destaques e tons mais claros para fundos 
+                e outros elementos da interface.
+            </p>
+            <p class="legenda">Essa escolha mantém a interface limpa e consistente, sem
+                disputar atenção com muitas cores diferentes — comum em apps de
+                mobilidade, onde clareza e leitura rápida são prioridade.</p>
+
+            <div class="grade-cores">
+                <div class="amostra azul-escuro">#0A2540</div>
+                <div class="amostra azul">#3B82F6</div>
+                <div class="amostra cinza-claro">#F1F5F9</div>
+                <div class="amostra branco">#FFFFFF</div>
+                <div class="amostra cinza">#64748B</div>
+            </div>
+            <div class="legenda-grade">
+                <span>Azul escuro</span>
+                <span>Azul</span>
+                <span>Cinza claro</span>
+                <span>Branco</span>
+                <span>Cinza</span>
+            </div>
+        </section>
+
+        <section class="parada">
+            <h2>Uso em CSS</h2>
+            <p class="legenda">As cores são centralizadas em variáveis CSS
+                (<code>:root</code>) e reutilizadas em todo o projeto através de
+                <code>var()</code>, garantindo consistência e facilidade de manutenção.</p>
+            <pre class="codigo">:root {
+  <span class="prop">--azul-escuro</span>: <span class="val">#0A2540</span>;
+  <span class="prop">--azul</span>: <span class="val">#3B82F6</span>;
+  <span class="prop">--cinza-claro</span>: <span class="val">#F1F5F9</span>;
+  <span class="prop">--branco</span>: <span class="val">#FFFFFF</span>;
+  <span class="prop">--cinza</span>: <span class="val">#64748B</span>;
+}
+
+header.rota-header {
+  <span class="prop">background</span>: <span class="val">var(--azul-escuro)</span>;
+}
+
+a.voltar {
+  <span class="prop">background</span>: <span class="val">var(--azul)</span>;
+}</pre>
+        </section>
+
+        <a class="voltar" href="index.html">&larr; Voltar para a página inicial</a>
+    </main>
+</body>
+</html>
