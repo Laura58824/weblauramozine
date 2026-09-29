@@ -38,7 +38,7 @@ body {
 .container {
     width: 90%;
     max-width: 420px;
-    padding: 40px;
+    padding: 28px 24px;
     background-color: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, .2);
     border-radius: 24px;
@@ -54,7 +54,7 @@ body {
 }
 
 .icone-usuario i {
-    font-size: 64px;
+    font-size: 52px;
     color: var(--branco);
 }
 
@@ -182,12 +182,26 @@ body {
 }
 
 
-@media (max-width: 480px) {
+
+@media (min-width: 601px) {
     .container {
-        padding: 28px 24px;
+        padding: 40px;
     }
 
     .icone-usuario i {
-        font-size: 52px;
+        font-size: 64px;
+    }
+}
+
+
+
+@media (min-width: 1025px) {
+    .container {
+        max-width: 420px;
+        padding: 40px;
+    }
+
+    .icone-usuario i {
+        font-size: 64px;
     }
 }
