@@ -4,8 +4,6 @@ img, video, iframe {
     max-width: 100%;
 }
 
-
-
 body {
     min-height: 100vh;
     min-height: 100dvh;
@@ -14,9 +12,10 @@ body {
 }
 
 main {
-    flex: 1;                     
+    flex: 1;
     width: 100%;
-    margin: 3rem auto 0;
+    margin: 1.5rem auto 0;
+    padding: 0 1rem 2rem;
 }
 
 
@@ -24,7 +23,7 @@ main {
     background: var(--azul-escuro);
     color: #fff;
     text-align: center;
-    padding: 2.2rem 1.5rem 2.6rem;
+    padding: 1.6rem 1rem 2.2rem;
     border-radius: 0 0 24px 24px;
 }
 
@@ -39,7 +38,7 @@ main {
 .topo-azul h1 {
     font-family: 'Manrope', sans-serif;
     font-weight: 800;
-    font-size: 1.9rem;
+    font-size: 1.6rem;
     margin: 0;
     letter-spacing: -.01em;
 }
@@ -51,41 +50,42 @@ main {
 }
 
 
-
 nav#menu {
     display: block;
-    padding: 1.4rem 1.5rem 1.2rem;
+    padding: 1.2rem 1rem 1rem;
 }
 
 nav#menu ul {
-    list-style: none;            
+    list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;               
-    flex-wrap: wrap;             
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     gap: .6rem;
-    text-transform: uppercase;  
+    text-transform: uppercase;
 }
 
 nav#menu li {
     background-color: var(--branco);
-    border-radius: 999px;                     
+    border-radius: 999px;
     box-shadow: 0 2px 8px rgba(10, 37, 64, 0.08);
-    transition: background-color .3s;         
+    text-align: center;
+    transition: background-color .3s;
 }
 
 nav#menu li:hover,
 nav#menu li:focus-within {
-    background-color: var(--azul);           
+    background-color: var(--azul);
 }
 
 nav#menu a {
-    display: block;                          
+    display: block;
     padding: .65rem 1.2rem;
     border-radius: 999px;
     color: var(--texto);
-    text-decoration: none;                    
+    text-decoration: none;
     font-family: 'Manrope', sans-serif;
     font-weight: 700;
     font-size: .75rem;
@@ -94,8 +94,8 @@ nav#menu a {
 
 nav#menu a:hover,
 nav#menu a:focus-visible {
-    color: var(--branco);                     
-    text-decoration: underline;               
+    color: var(--branco);
+    text-decoration: underline;
 }
 
 nav#menu a:focus-visible {
@@ -104,8 +104,14 @@ nav#menu a:focus-visible {
 }
 
 
+section.parada {
+    padding: 1.2rem 1.1rem 1.4rem;
+}
+
 
 footer {
+    display: flex;
+    flex-direction: column;
     background: var(--azul-escuro);
     color: #CBD5E1;
     text-align: left;
@@ -119,35 +125,62 @@ footer p {
 
 
 
-@media (max-width: 600px) {
+@media (min-width: 601px) {
+
+    main {
+        margin-top: 3rem;
+        padding: 0 1.5rem 3rem;
+    }
 
     .topo-azul {
-        padding: 1.6rem 1rem 2.2rem;
+        padding: 2.2rem 1.5rem 2.6rem;
     }
 
     .topo-azul h1 {
-        font-size: 1.6rem;
+        font-size: 1.9rem;
     }
 
-    
+   
     nav#menu {
-        padding: 1.2rem 1rem 1rem;
+        padding: 1.4rem 1.5rem 1.2rem;
     }
 
     nav#menu ul {
-        flex-direction: column;
-    }
-
-    nav#menu li {
-        text-align: center;
-    }
-
-       main {
-        margin-top: 1.5rem;
-        padding: 0 1rem 2rem;
+        flex-direction: row;
     }
 
     section.parada {
-        padding: 1.2rem 1.1rem 1.4rem;
+        padding: 1.6rem 1.6rem 1.8rem;
+    }
+
+    footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: .2rem 1.5rem;
+        padding: 1.2rem 1.5rem;
+    }
+}
+
+
+
+@media (min-width: 1025px) {
+
+    
+    main {
+        max-width: 1000px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        gap: 1.2rem;
+    }
+
+    section.parada {
+        flex: 1 1 320px;
+        margin-bottom: 0;
+    }
+
+    footer {
+        padding: 1.2rem 2.5rem;
     }
 }
