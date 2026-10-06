@@ -200,3 +200,37 @@ body {
         padding: 2.5rem;
     }
 }
+
+
+body {
+    line-height: normal;
+}
+
+.topo-admin h1 {
+    margin: 0;
+}
+
+.tabela-usuarios {
+    margin-bottom: 0;
+}
+
+.btn-editar:hover {
+    background-color: var(--azul);
+    color: var(--branco);
+}
+
+.btn-excluir:hover {
+    background-color: #DC2626;
+    border-color: #DC2626;
+    color: var(--branco);
+}
+
+.tabela-usuarios th,
+.tabela-usuarios td {
+    vertical-align: middle;
+}
+
+.btn-editar,
+.btn-excluir {
+    line-height: normal;
+}

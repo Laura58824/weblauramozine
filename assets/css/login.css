@@ -205,3 +205,28 @@ body {
         font-size: 64px;
     }
 }
+
+
+body {
+    line-height: normal;
+}
+
+.input-box input.form-control:focus {
+    background-color: transparent;
+    color: var(--branco);
+    box-shadow: none;
+}
+
+.input-box input:-webkit-autofill {
+    -webkit-text-fill-color: var(--branco);
+    transition: background-color 9999s ease-in-out 0s;
+}
+
+.register-link p,
+.remember-forgot label {
+    margin: 0;
+}
+
+.login-button {
+    padding: 0;
+}
