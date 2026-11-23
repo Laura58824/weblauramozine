@@ -56,7 +56,7 @@ Para gerar a versão de produção: `npm run build` (gera a pasta `dist/`).
 
 ### 🌐 Deploy
 
-Link público: _(colocar aqui o link da Vercel)_
+Link público: https://weblauramozine.vercel.app
 
 ---
 
