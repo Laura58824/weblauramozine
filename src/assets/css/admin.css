@@ -1,0 +1,124 @@
+/* estilos só do painel administrativo */
+
+.conteudo {
+    width: 100%;
+    max-width: 900px;
+    margin: 2.5rem auto;
+    padding: 0 1rem 2rem;
+}
+
+.painel {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 1.2rem;
+    box-shadow: 0 4px 16px rgba(10, 37, 64, 0.08);
+}
+
+.painel h2 {
+    color: var(--azul-escuro);
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.tabela-usuarios {
+    font-size: .92rem;
+    margin-bottom: 0;
+}
+
+.tabela-usuarios thead th {
+    padding: .9rem 1rem;
+    font-weight: 700;
+}
+
+.tabela-usuarios thead th:first-child {
+    border-radius: 10px 0 0 10px;
+}
+
+.tabela-usuarios thead th:last-child {
+    border-radius: 0 10px 10px 0;
+}
+
+.tabela-usuarios td {
+    padding: .9rem 1rem;
+    color: var(--azul-escuro);
+    vertical-align: middle;
+}
+
+.tabela-usuarios td:nth-child(1) {
+    color: #64748B;
+    font-weight: 600;
+}
+
+.acoes {
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+
+.btn-editar,
+.btn-excluir {
+    border: none;
+    border-radius: 20px;
+    padding: .5rem 1.1rem;
+    font-size: .78rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.btn-editar,
+.btn-editar:hover {
+    background-color: var(--azul);
+    color: #fff;
+}
+
+.btn-editar:hover {
+    opacity: .85;
+}
+
+.btn-excluir {
+    background-color: #fff;
+    color: #DC2626;
+    border: 2px solid #DC2626;
+}
+
+.btn-excluir:hover {
+    background-color: #DC2626;
+    border-color: #DC2626;
+    color: #fff;
+}
+
+.conteudo .voltar {
+    display: block;
+    width: fit-content;
+    margin: 2rem auto 0;
+    text-decoration: none;
+    color: #64748B;
+    font-size: .85rem;
+    font-weight: 600;
+}
+
+.conteudo .voltar:hover {
+    color: var(--azul);
+    text-decoration: underline;
+}
+
+@media (min-width: 601px) {
+    .painel {
+        padding: 2rem;
+    }
+
+    .acoes {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1025px) {
+    .conteudo {
+        max-width: 1000px;
+    }
+
+    .painel {
+        padding: 2.5rem;
+    }
+}

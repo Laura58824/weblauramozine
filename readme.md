@@ -10,30 +10,53 @@ A proposta é tornar os deslocamentos mais **práticos, acessíveis e colaborati
 
 ## 📁 Estrutura do Projeto
 
+O projeto foi refatorado para **React** (com Vite) e usa **React Router DOM** para a navegação.
+
 ```text
 Projeto WEB/
 │
-├── assets/
-│   ├── css/
-│   │   └── arquivos de estilo (CSS)
-│   │
-│   └── imagens/
-│       └── imagens, logos e ícones do projeto
-│
-├── favicon.ico
+├── public/
+│   └── favicon.ico
+├── src/
+│   ├── assets/
+│   │   ├── css/          → bootstrap-custom.css, login.css, admin.css
+│   │   ├── imagens/
+│   │   └── audios/
+│   ├── components/
+│   │   ├── Header.jsx      → cabeçalho com logotipo e título
+│   │   ├── Navbar.jsx      → menu de navegação entre as páginas
+│   │   ├── Footer.jsx      → rodapé com autoria
+│   │   ├── LoginForm.jsx   → formulário de autenticação
+│   │   ├── UserTable.jsx   → tabela de usuários do painel admin
+│   │   ├── StatusBadge.jsx → badge de status do usuário
+│   │   ├── InfoCard.jsx    → cards "Sobre" e "Como funciona"
+│   │   ├── FeatureCard.jsx → cards "Por que usar o Levaê?"
+│   │   └── Cidades.jsx     → lista de cidades atendidas
+│   ├── pages/
+│   │   ├── Home.jsx   → rota /
+│   │   ├── Login.jsx  → rota /login
+│   │   └── Admin.jsx  → rota /admin
+│   ├── App.jsx        → definição das rotas
+│   └── main.jsx       → ponto de entrada
 ├── index.html
+├── package.json
+├── vite.config.js
+├── vercel.json        → faz as rotas funcionarem ao recarregar a página na Vercel
 └── readme.md
 ```
 
-### 📂 Organização
+### ▶️ Como rodar
 
-| Arquivo / Pasta   | Descrição                                                              |
-| ----------------- | ---------------------------------------------------------------------- |
-| `assets/css/`     | Arquivos CSS responsáveis pela aparência e estilização do site.        |
-| `assets/imagens/` | Imagens utilizadas no projeto, como logos, ícones e elementos visuais. |
-| `favicon.ico`     | Ícone do **Levaê** exibido na aba do navegador.                        |
-| `index.html`      | Página inicial da aplicação web.                                       |
-| `readme.md`       | Documentação e informações sobre o projeto.                            |
+```bash
+npm install
+npm run dev
+```
+
+Para gerar a versão de produção: `npm run build` (gera a pasta `dist/`).
+
+### 🌐 Deploy
+
+Link público: _(colocar aqui o link da Vercel)_
 
 ---
 
@@ -63,7 +86,9 @@ O projeto utiliza elementos visuais relacionados a **mobilidade, localização e
 
 O projeto é desenvolvido utilizando tecnologias web, com a seguinte organização:
 
-* **HTML5** — estrutura das páginas;
+* **React** + **Vite** — componentes e build;
+* **React Router DOM** — navegação entre as páginas;
+* **Bootstrap 5** e **Boxicons** — layout e ícones;
 * **CSS3** — estilização e identidade visual;
 * **Imagens e ícones** — elementos gráficos da interface.
 

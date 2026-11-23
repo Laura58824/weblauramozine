@@ -1,0 +1,176 @@
+/* tudo fica dentro de .pagina-login pra não afetar as outras páginas */
+
+.pagina-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--azul-escuro);
+    font-family: 'Manrope', sans-serif;
+}
+
+.caixa-login {
+    width: 90%;
+    max-width: 420px;
+    padding: 28px 24px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 24px;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 32px;
+    backdrop-filter: blur(20px);
+}
+
+.pagina-login .icone-usuario {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.pagina-login .icone-usuario i {
+    font-size: 52px;
+    color: #fff;
+}
+
+.pagina-login .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 24px 0;
+}
+
+.pagina-login .input-box input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .4);
+    border-radius: 40px;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 45px 0 20px;
+    transition: border-color .3s;
+}
+
+.pagina-login .input-box input:focus {
+    border-color: #fff;
+    background-color: transparent;
+    color: #fff;
+    box-shadow: none;
+}
+
+.pagina-login .input-box input::placeholder {
+    color: rgba(255, 255, 255, .7);
+}
+
+.pagina-login .input-box input:-webkit-autofill {
+    -webkit-text-fill-color: #fff;
+    transition: background-color 9999s ease-in-out 0s;
+}
+
+.pagina-login .input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #fff;
+}
+
+.pagina-login .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    margin: -10px 0 20px;
+    font-size: .85rem;
+}
+
+.pagina-login .remember-forgot label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0;
+    color: rgba(255, 255, 255, .85);
+}
+
+.pagina-login .remember-forgot label input {
+    accent-color: #fff;
+}
+
+.pagina-login .remember-forgot a,
+.pagina-login .register-link a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+
+.pagina-login .remember-forgot a:hover,
+.pagina-login .register-link a:hover {
+    text-decoration: underline;
+}
+
+.erro-login {
+    background-color: rgba(220, 38, 38, .2);
+    border: 1px solid #DC2626;
+    border-radius: 12px;
+    padding: 8px 12px;
+    font-size: .85rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.pagina-login .login-button {
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    background-color: #fff;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    color: var(--azul-escuro);
+    font-weight: 700;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
+    margin-top: 10px;
+    transition: all .3s;
+}
+
+.pagina-login .login-button:hover {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .4);
+    color: #fff;
+}
+
+.pagina-login .register-link {
+    font-size: 14px;
+    text-align: center;
+    color: rgba(255, 255, 255, .85);
+    margin: 20px 0 15px;
+}
+
+.pagina-login .register-link p {
+    margin: 0;
+}
+
+.pagina-login .voltar {
+    display: block;
+    width: fit-content;
+    margin: 2rem auto 0;
+    text-decoration: none;
+    color: rgba(255, 255, 255, .85);
+    font-size: .85rem;
+    font-weight: 600;
+}
+
+.pagina-login .voltar:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+@media (min-width: 601px) {
+    .caixa-login {
+        padding: 40px;
+    }
+
+    .pagina-login .icone-usuario i {
+        font-size: 64px;
+    }
+}

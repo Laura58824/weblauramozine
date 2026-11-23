@@ -67,17 +67,3 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .btn {
 }
 
 
-.login-page {
-    background-color: var(--azul-escuro);
-    min-height: 100vh;
-}
-
-.login-page .card {
-    box-shadow: 0 8px 32px rgba(0, 0, 0, .3);
-}
-
-.login-page .icone-usuario {
-    font-size: 4rem;
-    line-height: 1;
-    color: var(--azul-escuro);
-}
